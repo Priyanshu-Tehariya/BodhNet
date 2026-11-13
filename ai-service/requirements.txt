@@ -1,0 +1,25 @@
+# BodhNet AI Service — Python Dependencies
+# Tested with Python 3.13 on Apple Silicon (M-series)
+
+# Web framework and ASGI server
+fastapi==0.115.12
+uvicorn[standard]==0.34.3
+
+# Async HTTP client for calling Ollama
+httpx==0.28.1
+
+# Data validation models
+pydantic==2.11.4
+
+# RAG — Vector store (persistent, fully local, Apple Silicon native)
+chromadb==0.6.3
+
+# RAG — PDF parsing
+pypdf==5.4.0
+
+# RAG — Embeddings (local, no internet required after first download)
+sentence-transformers==4.1.0
+
+# Database — Oracle persistence (Phase 3A)
+sqlalchemy==2.0.41          # async-first ORM; 2.x required for asyncio support
+oracledb==3.1.0             # Oracle's official thin Python driver (no Oracle Client libs needed)
